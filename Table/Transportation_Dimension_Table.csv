@@ -1,0 +1,6 @@
+TransportID,Mode,FuelType,AverageCO2PerKM
+1,Truck,Diesel,0.21
+2,Train,Electric,0.05
+3,Ship,Oil,0.1
+4,Plane,Kerosene,0.8
+5,Drone,Battery,0.03

@@ -1,0 +1,823 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Company table",
+        "sourceLineageTag": "[dbo].[Company table]",
+        "columns": [
+          {
+            "name": "TransactionID",
+            "dataType": "int64",
+            "sourceColumn": "TransactionID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "TransactionID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransportID",
+            "dataType": "int64",
+            "sourceColumn": "TransportID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "TransportID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ProductionID",
+            "dataType": "int64",
+            "sourceColumn": "ProductionID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "ProductionID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SupplierID",
+            "dataType": "int64",
+            "sourceColumn": "SupplierID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "SupplierID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DistanceKM",
+            "dataType": "int64",
+            "sourceColumn": "DistanceKM",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "DistanceKM",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "UnitsProduced",
+            "dataType": "int64",
+            "sourceColumn": "UnitsProduced",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "UnitsProduced",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DeliveryCount",
+            "dataType": "int64",
+            "sourceColumn": "DeliveryCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "DeliveryCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Company table",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Fact_Table csv",
+        "isHidden": true,
+        "sourceLineageTag": "[dbo].[Fact_Table csv]",
+        "columns": [
+          {
+            "name": "Column1",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column2",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column3",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column3",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column4",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column4",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column5",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column5",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column5",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column6",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column6",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column6",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column7",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column7",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column7",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Fact_Table csv",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Production table",
+        "sourceLineageTag": "[dbo].[Production table]",
+        "columns": [
+          {
+            "name": "ProductionID",
+            "dataType": "int64",
+            "sourceColumn": "ProductionID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "ProductionID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Material",
+            "dataType": "string",
+            "sourceColumn": "Material",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Material",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EnergySource",
+            "dataType": "string",
+            "sourceColumn": "EnergySource",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "EnergySource",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AvgCO2PerUnit",
+            "dataType": "double",
+            "sourceColumn": "AvgCO2PerUnit",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "AvgCO2PerUnit",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Production table",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Production_Dimension_Table csv",
+        "isHidden": true,
+        "sourceLineageTag": "[dbo].[Production_Dimension_Table csv]",
+        "columns": [
+          {
+            "name": "Column1",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column2",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column3",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column3",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column4",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column4",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Production_Dimension_Table csv",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Supplier table",
+        "sourceLineageTag": "[dbo].[Supplier table]",
+        "columns": [
+          {
+            "name": "SupplierID",
+            "dataType": "int64",
+            "sourceColumn": "SupplierID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "SupplierID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SupplierName",
+            "dataType": "string",
+            "sourceColumn": "SupplierName",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "SupplierName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Location",
+            "dataType": "string",
+            "sourceColumn": "Location",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Location",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AvgCO2PerDelivery",
+            "dataType": "int64",
+            "sourceColumn": "AvgCO2PerDelivery",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "AvgCO2PerDelivery",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Supplier table",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Supplier_Dimension_Table csv",
+        "isHidden": true,
+        "sourceLineageTag": "[dbo].[Supplier_Dimension_Table csv]",
+        "columns": [
+          {
+            "name": "Column1",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column2",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column3",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column3",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column4",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column4",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Supplier_Dimension_Table csv",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Transportation table",
+        "sourceLineageTag": "[dbo].[Transportation table]",
+        "columns": [
+          {
+            "name": "TransportID",
+            "dataType": "int64",
+            "sourceColumn": "TransportID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "TransportID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Mode",
+            "dataType": "string",
+            "sourceColumn": "Mode",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Mode",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "FuelType",
+            "dataType": "string",
+            "sourceColumn": "FuelType",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "FuelType",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AverageCO2PerKM",
+            "dataType": "double",
+            "sourceColumn": "AverageCO2PerKM",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "AverageCO2PerKM",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Transportation table",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Transportation_Dimension_Table csv",
+        "isHidden": true,
+        "sourceLineageTag": "[dbo].[Transportation_Dimension_Table csv]",
+        "columns": [
+          {
+            "name": "Column1",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column2",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column3",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column3",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Column4",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Column4",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Column4",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Transportation_Dimension_Table csv",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "7b7a7c04bb205a3255cc1144977e265f",
+        "fromTable": "Company table",
+        "fromColumn": "TransportID",
+        "toTable": "Transportation table",
+        "toColumn": "TransportID"
+      },
+      {
+        "name": "dca082b27f221f428c28422650ed1412",
+        "fromTable": "Company table",
+        "fromColumn": "SupplierID",
+        "toTable": "Supplier table",
+        "toColumn": "SupplierID"
+      },
+      {
+        "name": "fd6a345c8bdddcc9ba6564e039b717df",
+        "fromTable": "Company table",
+        "fromColumn": "ProductionID",
+        "toTable": "Production table",
+        "toColumn": "ProductionID"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}

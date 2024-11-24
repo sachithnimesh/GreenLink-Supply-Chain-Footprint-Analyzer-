@@ -1,0 +1,6 @@
+ProductionID,Material,EnergySource,AvgCO2PerUnit
+1,Steel,Electricity,2.1
+2,Plastic,Natural Gas,1.5
+3,Wood,Solar,0.8
+4,Textile,Coal,3.0
+5,Electronics,Electricity,2.5

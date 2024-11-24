@@ -1,0 +1,21 @@
+,TransactionID,TransportID,ProductionID,SupplierID,DistanceKM,UnitsProduced,DeliveryCount,Mode,FuelType,AverageCO2PerKM,Material,EnergySource,AvgCO2PerUnit,SupplierName,Location,AvgCO2PerDelivery
+0,1,4,4,4,1638,1270,5,Plane,Kerosene,0.8,Textile,Coal,3.0,DeltaManufacturing,India,55
+1,2,3,5,3,1860,399,6,Ship,Oil,0.1,Electronics,Electricity,2.5,GammaSupply,Germany,45
+2,3,3,5,1,779,4019,1,Ship,Oil,0.1,Electronics,Electricity,2.5,AlphaCorp,USA,50
+3,4,3,3,1,1489,2049,7,Ship,Oil,0.1,Wood,Solar,0.8,AlphaCorp,USA,50
+4,5,2,2,2,153,2714,9,Train,Electric,0.05,Plastic,Natural Gas,1.5,BetaLogistics,China,60
+5,6,4,3,1,1567,1515,8,Plane,Kerosene,0.8,Wood,Solar,0.8,AlphaCorp,USA,50
+6,7,4,5,5,1982,4011,1,Plane,Kerosene,0.8,Electronics,Electricity,2.5,EpsilonPackaging,Brazil,48
+7,8,1,2,2,1424,3387,4,Truck,Diesel,0.21,Plastic,Natural Gas,1.5,BetaLogistics,China,60
+8,9,2,5,4,1018,3037,4,Train,Electric,0.05,Electronics,Electricity,2.5,DeltaManufacturing,India,55
+9,10,2,3,3,1928,212,3,Train,Electric,0.05,Wood,Solar,0.8,GammaSupply,Germany,45
+10,11,5,1,3,300,4655,5,Drone,Battery,0.03,Steel,Electricity,2.1,GammaSupply,Germany,45
+11,12,4,4,5,533,3773,3,Plane,Kerosene,0.8,Textile,Coal,3.0,EpsilonPackaging,Brazil,48
+12,13,1,1,4,84,1001,5,Truck,Diesel,0.21,Steel,Electricity,2.1,DeltaManufacturing,India,55
+13,14,3,2,3,561,4527,1,Ship,Oil,0.1,Plastic,Natural Gas,1.5,GammaSupply,Germany,45
+14,15,2,1,4,533,3153,9,Train,Electric,0.05,Steel,Electricity,2.1,DeltaManufacturing,India,55
+15,16,1,2,1,588,4389,5,Truck,Diesel,0.21,Plastic,Natural Gas,1.5,AlphaCorp,USA,50
+16,17,2,1,3,1975,495,4,Train,Electric,0.05,Steel,Electricity,2.1,GammaSupply,Germany,45
+17,18,1,5,2,853,4893,5,Truck,Diesel,0.21,Electronics,Electricity,2.5,BetaLogistics,China,60
+18,19,4,1,4,53,1796,8,Plane,Kerosene,0.8,Steel,Electricity,2.1,DeltaManufacturing,India,55
+19,20,2,2,3,409,1351,2,Train,Electric,0.05,Plastic,Natural Gas,1.5,GammaSupply,Germany,45
